@@ -1,0 +1,37 @@
+<ion-content class="login-page">
+  <div class="login-shell">
+    <div class="hero-card">
+      <div class="brand-mark">
+        <ion-icon name="phone-portrait-outline"></ion-icon>
+      </div>
+      <h1>Acceso móvil</h1>
+      <p>Ingresa para ver tus pantallas de análisis, actividades, dashboard y configuración.</p>
+    </div>
+
+    <ion-card class="form-card">
+      <ion-card-content>
+        <div class="field-group">
+          <ion-label>Correo</ion-label>
+          <ion-item lines="none" class="field-item">
+            <ion-icon slot="start" name="mail-outline"></ion-icon>
+            <ion-input type="email" placeholder="tu@correo.com"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="field-group">
+          <ion-label>Contraseña</ion-label>
+          <ion-item lines="none" class="field-item">
+            <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+            <ion-input type="password" placeholder="********"></ion-input>
+          </ion-item>
+        </div>
+
+        <ion-button expand="block" routerLink="/dashboard" class="primary-action">Entrar</ion-button>
+        <ion-note class="helper-link">
+          ¿No tienes cuenta?
+          <a routerLink="/registro">Crear registro</a>
+        </ion-note>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

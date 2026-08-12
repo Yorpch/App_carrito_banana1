@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Actividades</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding actividades-page">
+  <div class="top-card">
+    <div class="top-card__icon">
+      <ion-icon name="flame-outline"></ion-icon>
+    </div>
+    <div>
+      <h1>Resumen de actividad</h1>
+      <p>Seguimiento rápido de lo que pasó en tu app móvil.</p>
+    </div>
+  </div>
+
+  <ion-list lines="none" class="activity-list">
+    <ion-item *ngFor="let activity of activities" class="activity-item">
+      <div class="activity-dot"></div>
+      <ion-label>
+        <h2>{{ activity.title }}</h2>
+        <p>{{ activity.detail }}</p>
+      </ion-label>
+      <ion-badge [color]="activity.color">{{ activity.status }}</ion-badge>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" routerLink="/analisis" class="action-button">
+    Ver análisis
+  </ion-button>
+</ion-content>

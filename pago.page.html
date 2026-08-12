@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro de Transacción</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="formularioTransaccion" (ngSubmit)="onSubmit()">
+    
+    <ion-item>
+      <ion-label position="stacked">Monto a procesar</ion-label>
+      <ion-input type="number" formControlName="monto" placeholder="0.00"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Concepto</ion-label>
+      <ion-input type="text" formControlName="concepto" placeholder="Ej. Pago de servicio"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Método de Pago</ion-label>
+      <ion-select formControlName="metodoPago" placeholder="Selecciona un método">
+        <ion-select-option value="tarjeta_credito">Tarjeta (Cumplimiento PCI-DSS)</ion-select-option>
+        <ion-select-option value="transferencia_spei">Transferencia Bancaria</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-button 
+      expand="block" 
+      type="submit" 
+      [disabled]="!formularioTransaccion.valid" 
+      class="ion-margin-top">
+      Enviar a Servicio Web
+    </ion-button>
+
+  </form>
+</ion-content>

@@ -1,0 +1,80 @@
+:host {
+  display: block;
+}
+
+.actividades-page {
+  --background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.top-card {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 18px;
+  margin-bottom: 18px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.top-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: #dbeafe;
+  color: #2563eb;
+  font-size: 1.4rem;
+}
+
+.top-card h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.top-card p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 0.92rem;
+}
+
+.activity-list {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.activity-item {
+  --background: #fff;
+  --padding-start: 14px;
+  --inner-padding-end: 14px;
+  margin-bottom: 12px;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.activity-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  margin-right: 12px;
+  background: #2563eb;
+  flex: 0 0 auto;
+}
+
+.activity-item h2 {
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.activity-item p {
+  color: #64748b;
+  font-size: 0.88rem;
+}
+
+.action-button {
+  --border-radius: 16px;
+  height: 52px;
+  font-weight: 700;
+}

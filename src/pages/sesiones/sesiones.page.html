@@ -1,0 +1,173 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Sesiones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-gray-50">
+  <div class="p-4">
+
+    <!-- Resumen -->
+    <div class="grid grid-cols-3 gap-3 mb-4">
+      <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm text-center">
+        <div class="text-2xl font-semibold text-gray-800">128</div>
+        <div class="text-xs text-gray-400 mt-1">Total sesiones</div>
+      </div>
+      <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm text-center">
+        <div class="text-2xl font-semibold text-gray-800">58.2m</div>
+        <div class="text-xs text-gray-400 mt-1">Distancia total</div>
+      </div>
+      <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm text-center">
+        <div class="text-2xl font-semibold text-gray-800">94.2%</div>
+        <div class="text-xs text-gray-400 mt-1">Precisión prom.</div>
+      </div>
+    </div>
+
+    <!-- Sesión activa -->
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-4">
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="text-sm font-semibold text-blue-700 flex items-center gap-2">
+          <ion-icon name="radio-outline"></ion-icon> Sesión activa #128
+        </h2>
+        <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-medium flex items-center gap-1">
+          <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span> En curso
+        </span>
+      </div>
+      <div class="grid grid-cols-2 gap-2">
+        <div class="bg-white rounded-lg p-2">
+          <div class="text-xs text-gray-400">Inicio</div>
+          <div class="text-sm font-medium text-gray-800">12:45:00</div>
+        </div>
+        <div class="bg-white rounded-lg p-2">
+          <div class="text-xs text-gray-400">Duración</div>
+          <div class="text-sm font-medium text-gray-800">00:14:32</div>
+        </div>
+        <div class="bg-white rounded-lg p-2">
+          <div class="text-xs text-gray-400">Distancia</div>
+          <div class="text-sm font-medium text-gray-800">4.5m</div>
+        </div>
+        <div class="bg-white rounded-lg p-2">
+          <div class="text-xs text-gray-400">Decisiones</div>
+          <div class="text-sm font-medium text-gray-800">127</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lista de sesiones -->
+    <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+      <div class="px-4 py-3 border-b border-gray-50">
+        <h2 class="text-sm font-semibold text-gray-700 flex items-center gap-2">
+          <ion-icon name="time-outline"></ion-icon> Historial de sesiones
+        </h2>
+      </div>
+
+      <!-- Sesión 127 -->
+      <div class="px-4 py-3 border-b border-gray-50">
+        <div class="flex items-center justify-between mb-1">
+          <span class="text-sm font-medium text-gray-800">Sesión #127</span>
+          <span class="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full">completada</span>
+        </div>
+        <div class="flex gap-4 text-xs text-gray-400 mb-2">
+          <span>27 May 2026</span>
+          <span>12:20:00 – 12:41:15</span>
+        </div>
+        <div class="grid grid-cols-3 gap-2">
+          <div class="text-center">
+            <div class="text-sm font-semibold text-gray-700">3.8m</div>
+            <div class="text-xs text-gray-400">Distancia</div>
+          </div>
+          <div class="text-center">
+            <div class="text-sm font-semibold text-gray-700">98</div>
+            <div class="text-xs text-gray-400">Decisiones</div>
+          </div>
+          <div class="text-center">
+            <div class="text-sm font-semibold text-green-600">93.8%</div>
+            <div class="text-xs text-gray-400">Precisión</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sesión 126 -->
+      <div class="px-4 py-3 border-b border-gray-50">
+        <div class="flex items-center justify-between mb-1">
+          <span class="text-sm font-medium text-gray-800">Sesión #126</span>
+          <span class="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full">completada</span>
+        </div>
+        <div class="flex gap-4 text-xs text-gray-400 mb-2">
+          <span>27 May 2026</span>
+          <span>11:55:00 – 12:18:40</span>
+        </div>
+        <div class="grid grid-cols-3 gap-2">
+          <div class="text-center">
+            <div class="text-sm font-semibold text-gray-700">5.1m</div>
+            <div class="text-xs text-gray-400">Distancia</div>
+          </div>
+          <div class="text-center">
+            <div class="text-sm font-semibold text-gray-700">112</div>
+            <div class="text-xs text-gray-400">Decisiones</div>
+          </div>
+          <div class="text-center">
+            <div class="text-sm font-semibold text-green-600">92.1%</div>
+            <div class="text-xs text-gray-400">Precisión</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sesión 125 -->
+      <div class="px-4 py-3 border-b border-gray-50">
+        <div class="flex items-center justify-between mb-1">
+          <span class="text-sm font-medium text-gray-800">Sesión #125</span>
+          <span class="text-xs bg-amber-100 text-amber-600 px-2 py-0.5 rounded-full">alerta</span>
+        </div>
+        <div class="flex gap-4 text-xs text-gray-400 mb-2">
+          <span>26 May 2026</span>
+          <span>16:30:00 – 16:48:22</span>
+        </div>
+        <div class="grid grid-cols-3 gap-2">
+          <div class="text-center">
+            <div class="text-sm font-semibold text-gray-700">2.3m</div>
+            <div class="text-xs text-gray-400">Distancia</div>
+          </div>
+          <div class="text-center">
+            <div class="text-sm font-semibold text-gray-700">64</div>
+            <div class="text-xs text-gray-400">Decisiones</div>
+          </div>
+          <div class="text-center">
+            <div class="text-sm font-semibold text-amber-600">88.4%</div>
+            <div class="text-xs text-gray-400">Precisión</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sesión 124 -->
+      <div class="px-4 py-3">
+        <div class="flex items-center justify-between mb-1">
+          <span class="text-sm font-medium text-gray-800">Sesión #124</span>
+          <span class="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full">completada</span>
+        </div>
+        <div class="flex gap-4 text-xs text-gray-400 mb-2">
+          <span>26 May 2026</span>
+          <span>15:10:00 – 15:34:05</span>
+        </div>
+        <div class="grid grid-cols-3 gap-2">
+          <div class="text-center">
+            <div class="text-sm font-semibold text-gray-700">4.7m</div>
+            <div class="text-xs text-gray-400">Distancia</div>
+          </div>
+          <div class="text-center">
+            <div class="text-sm font-semibold text-gray-700">103</div>
+            <div class="text-xs text-gray-400">Decisiones</div>
+          </div>
+          <div class="text-center">
+            <div class="text-sm font-semibold text-green-600">95.1%</div>
+            <div class="text-xs text-gray-400">Precisión</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</ion-content>

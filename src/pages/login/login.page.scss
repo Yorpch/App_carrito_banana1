@@ -1,0 +1,93 @@
+:host,
+ion-content.login-page {
+  --background: linear-gradient(180deg, #0f172a 0%, #111827 55%, #f8fafc 55%);
+}
+
+.login-shell {
+  min-height: 100%;
+  padding: 24px 18px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-card {
+  color: #fff;
+  text-align: left;
+  padding: 24px 4px 10px;
+}
+
+.hero-card h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+  margin: 12px 0 8px;
+}
+
+.hero-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 30ch;
+}
+
+.brand-mark {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: rgba(59, 130, 246, 0.18);
+  color: #93c5fd;
+  font-size: 1.5rem;
+}
+
+.form-card {
+  margin: 0;
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18);
+}
+
+.field-group {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.field-group ion-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.field-item {
+  --background: #f8fafc;
+  --border-radius: 16px;
+  --padding-start: 14px;
+  --inner-padding-end: 14px;
+  --min-height: 54px;
+  border: 1px solid #e2e8f0;
+}
+
+.field-item ion-icon {
+  color: #64748b;
+}
+
+.primary-action {
+  --border-radius: 16px;
+  margin-top: 8px;
+  height: 52px;
+  font-weight: 700;
+}
+
+.helper-link {
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  color: #64748b;
+}
+
+.helper-link a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}

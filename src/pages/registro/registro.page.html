@@ -1,0 +1,42 @@
+<ion-content class="registro-page">
+  <div class="registro-shell">
+    <div class="intro">
+      <h1>Crear cuenta</h1>
+      <p>Regístrate para usar la app desde Android y mantener tus pantallas sincronizadas.</p>
+    </div>
+
+    <ion-card class="form-card">
+      <ion-card-content>
+        <div class="field-group">
+          <ion-label>Nombre</ion-label>
+          <ion-item lines="none" class="field-item">
+            <ion-icon slot="start" name="person-outline"></ion-icon>
+            <ion-input type="text" placeholder="Tu nombre"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="field-group">
+          <ion-label>Correo</ion-label>
+          <ion-item lines="none" class="field-item">
+            <ion-icon slot="start" name="at-outline"></ion-icon>
+            <ion-input type="email" placeholder="tu@correo.com"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="field-group">
+          <ion-label>Contraseña</ion-label>
+          <ion-item lines="none" class="field-item">
+            <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+            <ion-input type="password" placeholder="********"></ion-input>
+          </ion-item>
+        </div>
+
+        <ion-button expand="block" routerLink="/login" class="primary-action">Registrar</ion-button>
+        <ion-note class="helper-link">
+          ¿Ya tienes cuenta?
+          <a routerLink="/login">Volver a login</a>
+        </ion-note>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
